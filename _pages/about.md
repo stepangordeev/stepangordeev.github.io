@@ -16,7 +16,8 @@ social: true  # includes social icons at the bottom of the page
 years: [2021, 2020]
 ---
 
-I am a fifth-year Economics Ph.D. student at the University of Rochester. I am interested in macro development.
+I am a fifth-year Economics Ph.D. student at the University of Rochester.
+I am interested in macro development.
 
 ---
 

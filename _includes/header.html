@@ -32,7 +32,9 @@
             </a>
           </li>
           {% if site.blog_name %}
+
           <!-- Blog -->
+          <!--
           <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
             <a class="nav-link" href="{{ '/blog/' | relative_url }}">
               blog
@@ -42,6 +44,14 @@
             </a>
           </li>
           {% endif %}
+          -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/cv.pdf' | relative_url }}">
+              cv
+            </a>
+          </li>
+
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}

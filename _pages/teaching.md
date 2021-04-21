@@ -32,7 +32,7 @@ nav: true
         <h5 class="font-weight-bold">Intermediate Macroeconomics</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">
+        <span class="badge font-weight-bold text-uppercase align-middle course-badge">
             ECO 209
         </span>
       </div>

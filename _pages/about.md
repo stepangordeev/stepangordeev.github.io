@@ -17,5 +17,3 @@ social: true  # includes social icons at the bottom of the page
 
 I am a fifth-year Economics Ph.D. student at the University of Rochester.
 I am interested in macro development.
-
----

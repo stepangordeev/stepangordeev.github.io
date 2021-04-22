@@ -403,6 +403,8 @@ footer.sticky-bottom {
       }
       .title {
         font-weight: bolder;
+        font-size: 1.1rem;
+        font-family: "Roboto Slab", "Times New Roman", serif
       }
       .author {
         a {
@@ -413,7 +415,6 @@ footer.sticky-bottom {
           }
         }
         > em {
-          border-bottom: 1px solid;
           font-style: normal;
         }
       }

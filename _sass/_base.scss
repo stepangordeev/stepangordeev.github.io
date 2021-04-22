@@ -444,7 +444,10 @@ footer.sticky-bottom {
 
         p {
           line-height: 1.4em;
-          margin: 10px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: 25px;
+          margin-right: 25px;
         }
         pre {
           font-size: 1em;
@@ -454,14 +457,15 @@ footer.sticky-bottom {
       }
       .hidden.open {
         max-height: 100em;
-        -webkit-transition: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
+        -webkit-transition: 750ms ease;
+        -moz-transition: 750ms ease;
+        -ms-transition: 750ms ease;
+        -o-transition: 750ms ease;
+        transition: all 750ms ease;
       }
       div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        border: 0;
       }
       div.abstract.hidden.open {
         border-color: var(--global-text-color);

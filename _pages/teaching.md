@@ -14,7 +14,7 @@ nav: true
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
-        <h5 class="font-weight-bold">Computational Macroeconomics</h5>
+        <h5 class="course-title">Computational Macroeconomics</h5>
       </div>
     </div>
     <h6 class="font-italic mt-2 mt-sm-0">Fall 2020, Fall 2019: Instructor</h6>
@@ -29,7 +29,7 @@ nav: true
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
-        <h5 class="font-weight-bold">Intermediate Macroeconomics</h5>
+        <h5 class="course-title">Intermediate Macroeconomics</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
         <span class="badge font-weight-bold text-uppercase align-middle course-badge">

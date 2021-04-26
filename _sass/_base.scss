@@ -96,6 +96,7 @@ a, table.table a {
   }
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: "Roboto Slab", "Times New Roman", serif;
   }
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
@@ -261,6 +262,10 @@ footer.sticky-bottom {
       }
     }
   }
+}
+
+h1.post-title {
+  font-family: "Roboto Slab", "Times New Roman", serif;
 }
 
 .pagination {
@@ -518,4 +523,9 @@ hr {
   border-color: $grey-color-light;
   background-color: $grey-color-light;
   color: $grey-color-light;
+}
+
+h5.course-title {
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-weight: bold;
 }

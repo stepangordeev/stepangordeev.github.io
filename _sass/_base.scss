@@ -512,3 +512,10 @@ html.transition *:after {
 span.course-badge {
   background-color: var(--global-theme-color);
 }
+
+// make <hr> respond to night theme
+hr {
+  border-color: $grey-color-light;
+  background-color: $grey-color-light;
+  color: $grey-color-light;
+}

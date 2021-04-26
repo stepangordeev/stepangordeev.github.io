@@ -97,6 +97,7 @@ a, table.table a {
   .navbar-brand {
     color: var(--global-text-color);
     font-family: "Roboto Slab", "Times New Roman", serif;
+    font-size: 1.5rem;
   }
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
@@ -408,7 +409,7 @@ h1.post-title {
       }
       .title {
         font-weight: bolder;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-family: "Roboto Slab", "Times New Roman", serif
       }
       .author {
@@ -438,7 +439,7 @@ h1.post-title {
         }
       }
       .hidden {
-        font-size: 0.875rem;
+        font-size: 1rem;
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
@@ -528,4 +529,9 @@ hr {
 h5.course-title {
   font-family: "Roboto Slab", "Times New Roman", serif;
   font-weight: bold;
+  font-size: 1.3rem;
+}
+
+body {
+  font-size: 1.25rem;
 }

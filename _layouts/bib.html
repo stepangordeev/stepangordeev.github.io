@@ -81,7 +81,7 @@
 
     <div class="links">
     {% if entry.abstract %}
-      <a class="abstract badge grey waves-effect font-weight-light mr-1" role="button">Abstract</a>
+      <a class="abstract badge grey waves-effect font-weight-light mr-1" role="button"><i class="fas fa-angle-down"></i> Abstract</a>
     {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">arXiv</a>
@@ -91,9 +91,9 @@
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
-      <a href="{{ entry.pdf }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">PDF</a>
+      <a href="{{ entry.pdf }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>
       {% else %}
-      <a href="{{ entry.pdf | relative_url }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">PDF</a>
+      <a href="{{ entry.pdf | relative_url }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>
       {% endif %}
     {% endif %}
     {% if entry.supp %}

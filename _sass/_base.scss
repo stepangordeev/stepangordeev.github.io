@@ -5,7 +5,6 @@
 // Typography
 
 p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
-  color: var(--global-text-color);
   font-family: Rubik, sans-serif;
 }
 
@@ -268,6 +267,7 @@ footer.sticky-bottom {
 }
 
 h1.post-title {
+  color: var(--global-headline-color) !important;
   font-family: "Roboto Slab", "Times New Roman", serif;
 }
 
@@ -433,6 +433,9 @@ h1.post-title {
             background-color: var(--global-button-bg-color);
             color: var(--global-button-text-color) !important;
         }
+        a:hover {
+            background-color: var(--global-button-hover-bg-color);
+        }
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
@@ -543,6 +546,7 @@ h5.course-title {
 
 body {
   font-size: 1.25rem;
+  color: var(--global-text-color);
 }
 
 

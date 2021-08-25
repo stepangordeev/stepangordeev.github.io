@@ -15,8 +15,10 @@
   --global-distill-app-color: #{$grey-color};
   --global-card-bg-color: #{$white-color};
   --global-button-bg-color: #{$nord8};
+  --global-button-hover-bg-color: #{$nord9};
   --global-button-text-color: #{$nord0};
   --global-border-color: #{$nord4};
+  --global-headline-color: #{$nord1};
 
   .fa-sun {
     display : none;
@@ -41,8 +43,10 @@ html[data-theme='dark'] {
   --global-distill-app-color: #{$grey-color-light};
   --global-card-bg-color: #{$nord2};
   --global-button-bg-color: #{$nord8};
+  --global-button-hover-bg-color: #{$nord9};
   --global-button-text-color: #{$nord0};
   --global-border-color: #{$nord3};
+  --global-headline-color: #{$nord4};
 
 
   .fa-sun {

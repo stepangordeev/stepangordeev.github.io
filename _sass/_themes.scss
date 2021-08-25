@@ -5,7 +5,7 @@
 :root {
   --global-bg-color: #{$nord6};
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
+  --global-text-color: #{$nord0};
   --global-text-color-light: #{$grey-color};
   --global-theme-color: #{$orange-color};
   --global-hover-color: #{$orange-color};
@@ -14,6 +14,9 @@
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-card-bg-color: #{$white-color};
+  --global-button-bg-color: #{$nord8};
+  --global-button-text-color: #{$nord0};
+  --global-border-color: #{$nord4};
 
   .fa-sun {
     display : none;
@@ -28,7 +31,7 @@
 html[data-theme='dark'] {
   --global-bg-color: #{$nord0};
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
+  --global-text-color: #{$nord6};
   --global-text-color-light: #{$grey-color-light};
   --global-theme-color: #{$orange-color};
   --global-hover-color: #{$orange-color};
@@ -37,6 +40,10 @@ html[data-theme='dark'] {
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
   --global-card-bg-color: #{$nord2};
+  --global-button-bg-color: #{$nord8};
+  --global-button-text-color: #{$nord0};
+  --global-border-color: #{$nord3};
+
 
   .fa-sun {
     padding-left: 10px;

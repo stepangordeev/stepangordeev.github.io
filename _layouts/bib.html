@@ -81,50 +81,50 @@
 
     <div class="links">
     {% if entry.abstract %}
-      <a class="abstract badge grey waves-effect font-weight-light mr-1" role="button"><i class="fas fa-angle-down"></i> Abstract</a>
+      <a class="abstract badge waves-effect font-weight-light mr-1" role="button"><i class="fas fa-angle-down"></i> Abstract</a>
     {% endif %}
     {% if entry.arxiv %}
-      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">arXiv</a>
+      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">arXiv</a>
     {% endif %}
     {% if entry.html %}
-      <a href="{{ entry.html }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">HTML</a>
+      <a href="{{ entry.html }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">HTML</a>
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
-      <a href="{{ entry.pdf }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>
+      <a href="{{ entry.pdf }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>
       {% else %}
-      <a href="{{ entry.pdf | relative_url }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>
+      <a href="{{ entry.pdf | relative_url }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>
       {% endif %}
     {% endif %}
     {% if entry.supp %}
       {% if entry.supp contains '://' %}
-      <a href="{{ entry.supp }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Supp</a>
+      <a href="{{ entry.supp }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Supp</a>
       {% else %}
-      <a href="{{ entry.supp | relative_url }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Supp</a>
+      <a href="{{ entry.supp | relative_url }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Supp</a>
       {% endif %}
     {% endif %}
     {% if entry.blog %}
-      <a href="{{ entry.blog }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Blog</a>
+      <a href="{{ entry.blog }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Blog</a>
     {% endif %}
     {% if entry.code %}
-      <a href="{{ entry.code }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Code</a>
+      <a href="{{ entry.code }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Code</a>
     {% endif %}
     {% if entry.poster %}
       {% if entry.poster contains '://' %}
-      <a href="{{ entry.poster }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Poster</a>
+      <a href="{{ entry.poster }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Poster</a>
       {% else %}
-      <a href="{{ entry.poster | relative_url }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Poster</a>
+      <a href="{{ entry.poster | relative_url }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Poster</a>
       {% endif %}
     {% endif %}
     {% if entry.slides %}
       {% if entry.slides contains '://' %}
-      <a href="{{ entry.slides }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Slides</a>
+      <a href="{{ entry.slides }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Slides</a>
       {% else %}
-      <a href="{{ entry.slides | relative_url }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Slides</a>
+      <a href="{{ entry.slides | relative_url }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Slides</a>
       {% endif %}
     {% endif %}
     {% if entry.website %}
-      <a href="{{ entry.website }}" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Website</a>
+      <a href="{{ entry.website }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Website</a>
     {% endif %}
     </div>
 

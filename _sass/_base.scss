@@ -478,6 +478,7 @@ h1.post-title {
       }
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
+        background-color: var(--global-card-bg-color);
       }
     }
   }
@@ -541,8 +542,8 @@ body {
 
 // teaching card adjustments
 div.card {
-  background-color: var(--global-bg-color);
+  background-color: var(--global-card-bg-color);
 }
 li.list-group-item {
-  background-color: var(--global-bg-color);
+  background-color: var(--global-card-bg-color);
 }

@@ -91,9 +91,9 @@
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
-      <a href="{{ entry.pdf }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>
+      <a href="{{ entry.pdf }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
       {% else %}
-      <a href="{{ entry.pdf | relative_url }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="far fa-file-pdf"></i> PDF</a>
+      <a href="{{ entry.pdf | relative_url }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
       {% endif %}
     {% endif %}
     {% if entry.supp %}
@@ -118,9 +118,9 @@
     {% endif %}
     {% if entry.slides %}
       {% if entry.slides contains '://' %}
-      <a href="{{ entry.slides }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Slides</a>
+      <a href="{{ entry.slides }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="fas fa-layer-group"></i> Slides</a>
       {% else %}
-      <a href="{{ entry.slides | relative_url }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Slides</a>
+      <a href="{{ entry.slides | relative_url }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="fas fa-layer-group"></i> Slides</a>
       {% endif %}
     {% endif %}
     {% if entry.website %}

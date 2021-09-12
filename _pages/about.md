@@ -6,7 +6,7 @@ description: Economics Ph.D. Candidate
 
 profile:
   align: left
-  image: prof_pic.jpg
+  image: portrait.JPG
   address: >
 
 news: false  # includes a list of news items

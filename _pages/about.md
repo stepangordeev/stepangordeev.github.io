@@ -15,7 +15,8 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-I am a sixth-year Economics Ph.D. student at the University of Rochester.
-I am interested in macro development.
+I am a Ph.D. candidate in Economics at the University of Rochester.
+
+I am interested in macroeconomics, economic development, and growth.
 
 I will be on the 2021/22 Job Market.

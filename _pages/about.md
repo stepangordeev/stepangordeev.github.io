@@ -19,4 +19,4 @@ I am a Ph.D. candidate in Economics at the University of Rochester.
 
 I am interested in macroeconomics, economic development, and growth.
 
-I will be on the 2021/22 Job Market.
+I will be joining the University of Connecticut as a Postdoctoral Researcher in August 2022.

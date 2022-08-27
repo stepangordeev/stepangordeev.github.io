@@ -15,8 +15,8 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-I am a Ph.D. candidate in Economics at the University of Rochester.
+I am a Postdoctoral Research Associate at the University of Connecticut.
 
 I am interested in macroeconomics, economic development, and growth.
 
-I will be joining the University of Connecticut as a Postdoctoral Researcher in August 2022.
+I completed my Ph.D. in Economics at the University of Rochester in 2022.

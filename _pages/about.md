@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Economics Ph.D. Candidate
+description: Economist
 
 profile:
   align: left

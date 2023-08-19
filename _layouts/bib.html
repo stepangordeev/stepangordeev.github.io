@@ -38,14 +38,17 @@
           
           {% if forloop.length == 1 %}
             {% if author_is_self %}
-              <em>{{author.first}} {{author.last}}</em>
+              <!-- <em>{{author.first}} {{author.last}}</em> -->
             {% else %}
               {{author.first}} {{author.last}}
             {% endif %}
           {% else %}
+            {% if forloop.first%}
+              with
+            {% endif %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                <em>{{author.first}} {{author.last}}</em>,
+                <!-- <em>{{author.first}} {{author.last}}</em>, -->
               {% else %}
                 {% if coauthor_url %}
                   <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>,
@@ -58,9 +61,11 @@
                 and <em>{{author.first}} {{author.last}}</em>
               {% else %}
                 {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                  <!-- and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a> -->
+                  <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
                 {% else %}
-                  and {{author.first}} {{author.last}}
+                  <!-- and {{author.first}} {{author.last}} -->
+                  {{author.first}} {{author.last}}
                 {% endif %}
               {% endif %}
             {% endunless %}

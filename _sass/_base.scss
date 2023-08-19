@@ -413,7 +413,7 @@ h1.post-title {
       }
       .title {
         font-weight: bolder;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-family: "Roboto Slab", "Times New Roman", serif
       }
       .author {
@@ -430,6 +430,7 @@ h1.post-title {
         }
       }
       .links {
+        padding-top: 5px;
         a {
             background-color: var(--global-button-bg-color);
             color: var(--global-button-text-color) !important;

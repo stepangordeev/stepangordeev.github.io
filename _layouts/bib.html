@@ -72,6 +72,18 @@
           {% endif %}
         {% endfor %}
       </div>
+      
+      <div class="working_paper_status">
+      {% if entry.date %}
+        <em>{{entry.status}}</em>
+      {% endif %}
+      </div>
+
+      <div class="working_paper_date">
+      {% if entry.date %}
+        <em>updated {{entry.date}}</em>
+      {% endif %}
+      </div>
 
       <div class="periodical">
       {% if entry.type == "article" %}
@@ -131,6 +143,12 @@
     {% endif %}
     {% if entry.website %}
       <a href="{{ entry.website }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank">Website</a>
+    {% endif %}
+    {% if entry.steg_wp %}
+    <a href="{{ entry.steg_wp }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="fas fa-pen-nib"></i> STEG WP</a>
+    {% endif %}
+    {% if entry.steg_policy %}
+    <a href="{{ entry.steg_policy }}" class="badge waves-effect font-weight-light mr-1" role="button" target="_blank"><i class="fas fa-landmark"></i> STEG Policy Brief</a>
     {% endif %}
     </div>
 

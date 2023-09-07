@@ -2,6 +2,18 @@
   - firstname: ["Sudhir"]
     url: https://www.sudhirksingh.com/
 
+"Steinbach":
+  - firstname: ["Sandro"]
+    url: https://www.sandrosteinbach.com/
+  
+"Kim":
+  - firstname: ["Dongin"]
+    url: https://sites.google.com/view/dongin-kim/
+
+"Jelliffe":
+  - firstname: ["Jeremy"]
+    url: http://www.jeremyjelliffe.com/
+
 "Podolsky":
   - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
     url: https://en.wikipedia.org/wiki/Boris_Podolsky

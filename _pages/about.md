@@ -15,8 +15,8 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-I am a Postdoctoral Research Associate at the University of Connecticut.
+I am a Postdoctoral Research Associate at the University of Connecticut. I completed my Ph.D. in Economics at the University of Rochester in 2022.
 
-I am interested in macroeconomics, economic development, and growth.
+My research is at the intersection of macroeconomics and development.
 
-I completed my Ph.D. in Economics at the University of Rochester in 2022.
+I strive to understand the role that the heterogeneous behavior of individual firms and households responding to their unique constraints plays in determining the aggregate development path of the economy. 

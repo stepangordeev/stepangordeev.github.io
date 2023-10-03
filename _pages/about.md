@@ -21,4 +21,4 @@ My research is at the intersection of macroeconomics and development.
 
 I strive to understand the role that the heterogeneous behavior of individual firms and households responding to their unique constraints plays in determining the aggregate development path of the economy. 
 
-I will be on the 2023/2024 job market.
+**I will be on the 2023/2024 job market.**

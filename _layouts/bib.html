@@ -74,8 +74,11 @@
       </div>
       
       <div class="working_paper_status">
-      {% if entry.date %}
-        <em>{{entry.status}}</em>
+      {% if entry.status %}
+      <!-- don't add line breaks as they add an unwanted space between status and comma -->
+        <em>{{entry.status}}{% if entry.journal %}, <em class="journal">{{entry.journal}}</em>
+        {% endif %}
+        </em>
       {% endif %}
       </div>
 
@@ -87,7 +90,7 @@
 
       <div class="periodical">
       {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
+        <!-- <em>{{entry.journal}}</em> -->
       {% elsif entry.type == "inproceedings" %}
         <em>In {{entry.booktitle}}</em>
       {% endif %}

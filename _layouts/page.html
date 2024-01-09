@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<!-- page.html -->
 <div class="post">
 
   <header class="post-header">
@@ -12,4 +13,14 @@ layout: default
     {{ content }}
   </article>
 
+  {%- if page.related_publications -%}
+  <h2>References</h2>
+  <div class="publications">
+    {% bibliography --cited_in_order %}
+  </div>
+  {%- endif %}
+
+  {%- if site.giscus and page.giscus_comments -%}
+    {% include giscus.html %}
+  {%- endif -%}
 </div>

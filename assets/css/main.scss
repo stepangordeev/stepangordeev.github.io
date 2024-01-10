@@ -7,10 +7,12 @@
 $max-content-width: {{ site.max_width }};
 
 @import
+  "nord",
   "variables",
   "themes",
   "layout",
   "base",
+  "base_customizations",
   "distill",
   "cv",
   "font-awesome/fontawesome",

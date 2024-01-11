@@ -19,10 +19,6 @@ em {
 div.abstract.hidden {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
     border: 0 !important;
-}
-div.abstract.hidden.open {
-    border-color: var(--global-text-color) !important;
-    background-color: var(--global-card-bg-color) !important;
 
     p {
 
@@ -32,6 +28,11 @@ div.abstract.hidden.open {
         margin-left: 25px !important;
         margin-right: 25px !important;
     }
+}
+div.abstract.hidden.open {
+    border-color: var(--global-text-color) !important;
+    background-color: var(--global-card-bg-color) !important;
+
 }
 
 .links {
@@ -114,4 +115,9 @@ div.container.mt-5 {
 
 .navbar .navbar-brand {
     font-size: 1.5rem !important;
+}
+
+li.list-group-item {
+    background-color: var(--global-card-bg-color);
+    border-color: var(--global-divider-color);
 }

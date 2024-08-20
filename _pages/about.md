@@ -16,7 +16,7 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-I am a Postdoctoral Research Associate at the University of Connecticut. I completed my Ph.D. in Economics at the University of Rochester in 2022. I will be joining Texas Christian University in August 2024.
+I am an Assistant Professor of Economics at Texas Christian University. I completed my Ph.D. in Economics at the University of Rochester in 2022 and served as a Postdoctoral Research Associate at the University of Connecticut in 2022--2024.
 
 My research is at the intersection of macroeconomics and development.
 

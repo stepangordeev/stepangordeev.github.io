@@ -1,7 +1,14 @@
-- Nuxt
-- Nuxt modules:
-    - icon
-    - fonts
-    - naive-ui
-        - https://www.naiveui.com/en-US/light/docs/nuxtjs
-- Naive UI
+- tools used
+    - Nuxt: https://nuxt.com/docs/getting-started/installation
+    - Nuxt modules
+        - icon (can auto-install during Nuxt setup)
+        - fonts (can auto-install during Nuxt setup)
+        - naive-ui (to get Naive UI to work with Nuxt)
+            - https://www.naiveui.com/en-US/light/docs/nuxtjs
+    - Naive UI
+- to set repo up for development on new PC
+    - clone repo
+    - install dependencies listed in `package.json`:
+        - `npm install`
+    - run dev server:
+        - `npm run dev`

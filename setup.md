@@ -1,0 +1,7 @@
+- Nuxt
+- Nuxt modules:
+    - icon
+    - fonts
+    - naive-ui
+        - https://www.naiveui.com/en-US/light/docs/nuxtjs
+- Naive UI

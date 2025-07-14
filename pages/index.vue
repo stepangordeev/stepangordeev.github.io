@@ -1,5 +1,3 @@
 <template>
-    <n-button>
-    +
-    </n-button>
+    Research
 </template>

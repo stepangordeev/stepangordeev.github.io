@@ -1,7 +1,18 @@
 <script setup>
   import { NConfigProvider, NButton, NLayout, NLayoutContent, NLayoutHeader, NLayoutFooter, NMenu, NGradientText, NFlex } from 'naive-ui'
 
-  const counter = useState('counter', () => Math.round(Math.random() * 1000))
+  /**
+   * Use this for type hints under js file
+   * @type import('naive-ui').GlobalThemeOverrides
+   */
+  const themeOverrides = {
+    common: {
+      primaryColor: '#f99a07',
+      primaryColorHover: '#faae38', // slightly lighter
+    },
+  }
+
+  const counter = useState('counter', 'index')
   const menuOptions = [
     {
       label: () =>
@@ -40,20 +51,27 @@
 </script>
 
 <template>
+  <n-config-provider :theme-overrides="themeOverrides">
   <n-layout>
 
     <n-layout-header style="padding: 10px 20px;" bordered>
       <n-flex justify="space-between" align-items="center">
 
+        <span>
         <n-gradient-text type="primary" size="24">
-            Stepan Gordeev
+            Stepan&nbsp;
         </n-gradient-text>
+        <n-gradient-text type="primary" size="24">
+            Gordeev
+        </n-gradient-text>
+        </span>
 
-        <!-- width of n-menu has to be hardcoded: by default, it wants 100% width and thus goes to new line. can't find a way for it to right-align the contents even if the whole menu is on the right. If width is insufficient, element won't render -->
+        <!-- width of n-menu has to be hardcoded: by default, it wants 100% width and thus goes to new line. So set it high enough to fit everything and right-justify with justify-content -->
         <n-menu
+          v-model:value="counter"
           :options="menuOptions"
           mode="horizontal"
-          style="width: 250px;"
+          style="width: 300px; justify-content: flex-end; color: black;"
         />
         
 
@@ -68,4 +86,8 @@
 
     <n-layout-footer>Footer</n-layout-footer>
   </n-layout>  
+  </n-config-provider>
 </template>
+
+<style scoped>
+</style>

@@ -49,15 +49,13 @@
             Stepan Gordeev
         </n-gradient-text>
 
+        <!-- width of n-menu has to be hardcoded: by default, it wants 100% width and thus goes to new line. can't find a way for it to right-align the contents even if the whole menu is on the right. If width is insufficient, element won't render -->
         <n-menu
-          mode="horizontal"
           :options="menuOptions"
-          responsive
+          mode="horizontal"
+          style="width: 250px;"
         />
         
-        <n-button quaternary type="default" tag="a" href="https://sgordeev.com">
-          Stepan Gordeev
-        </n-button>
 
       </n-flex>
     </n-layout-header>

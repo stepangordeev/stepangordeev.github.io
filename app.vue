@@ -13,6 +13,7 @@
   }
 
   const counter = useState('counter', 'index')
+  const route = useRoute() // current route object. Can access current page name with route.name
   const menuOptions = [
     {
       label: () =>
@@ -68,19 +69,23 @@
 
         <!-- width of n-menu has to be hardcoded: by default, it wants 100% width and thus goes to new line. So set it high enough to fit everything and right-justify with justify-content -->
         <n-menu
-          v-model:value="counter"
+          v-model:value="route.name"
           :options="menuOptions"
           mode="horizontal"
-          style="width: 300px; justify-content: flex-end; color: black;"
+          style="width: 300px; justify-content: flex-end; color: black; font-weight: bold; font-size: 16px;"
         />
         
 
       </n-flex>
     </n-layout-header>
 
-    <n-layout-content content-style="padding: 24px;">
-
-      <NuxtPage />
+    <n-layout-content 
+      content-style="padding: 24px; width: 100%; max-width: 1200px;" 
+      style="display: flex; justify-content: center;">
+      
+      <!-- <div style="width: 100%; max-width: 1200px;"> -->
+        <NuxtPage />
+      <!-- </div> -->
 
     </n-layout-content>
 
@@ -90,4 +95,7 @@
 </template>
 
 <style scoped>
+div {
+  font-family: 'Rubik', sans-serif; /* for some reason setting it in themeOverrides does not work */
+}
 </style>

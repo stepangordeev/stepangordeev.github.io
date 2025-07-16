@@ -80,7 +80,7 @@
     </n-layout-header>
 
     <n-layout-content 
-      content-style="padding: 24px; width: 100%; max-width: 1200px;" 
+      content-style="padding: 24px; width: 100%; max-width: 1000px;" 
       style="display: flex; justify-content: center;">
       
       <!-- <div style="width: 100%; max-width: 1200px;"> -->
@@ -97,5 +97,7 @@
 <style scoped>
 div {
   font-family: 'Rubik', sans-serif; /* for some reason setting it in themeOverrides does not work */
+  font-weight: 300;
+  font-size: 1.25rem;
 }
 </style>

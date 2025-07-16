@@ -3,13 +3,13 @@ import { NImage, NGrid, NGridItem } from 'naive-ui'
 </script>
 
 <template>
-    <div style="display: flex; justify-content: center;">
-        <n-image
-            src="profile.jpg"
-            width="100%"
+    <div class="profile-container">
+        <img
+            src="/profile.jpg"
+            class="profile-image"
         />
-        <div>
-            <p> I am an Assistant Professor of Economics at Texas Christian University. I completed my Ph.D. in Economics at the University of Rochester in 2022 and served as a Postdoctoral Research Associate at the University of Connecticut in 2022–2024.
+        <div class="profile-text">
+            <p style="margin-top: 0;"> I am an Assistant Professor of Economics at Texas Christian University. I completed my Ph.D. in Economics at the University of Rochester in 2022 and served as a Postdoctoral Research Associate at the University of Connecticut in 2022–2024.
             </p>
             <p>
             My research is at the intersection of macroeconomics and development.
@@ -21,4 +21,38 @@ import { NImage, NGrid, NGridItem } from 'naive-ui'
 </template>
 
 <style scoped>
+.profile-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    border-radius: .25rem;
+}
+
+.profile-text {
+    width: 60%;
+}
+
+/* Responsive design for narrow screens */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .profile-image {
+        width: 100%;
+    }
+    
+    .profile-text {
+        width: 100%;
+    }
+}
 </style>

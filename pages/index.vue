@@ -1,9 +1,10 @@
 <script setup>
-import { NImage, NGrid, NGridItem } from 'naive-ui'
+import { NImage, NGrid, NGridItem, NH2, NDivider, NFlex, NCard } from 'naive-ui'
+import PaperCard from '/paper_card.vue'
 </script>
 
 <template>
-    <div style="font-size: 40px; font-weight: bold; margin-bottom: 0.2em;">
+    <div style="font-size: 32px; font-weight: bold; margin-bottom: 0.2em;">
         Stepan Gordeev
     </div>
     <div class="profile-container">
@@ -21,6 +22,24 @@ import { NImage, NGrid, NGridItem } from 'naive-ui'
             </p>
         </div>
     </div>
+    <n-divider />
+    <div>
+        <n-flex vertical>
+
+        <n-h2 style="font-weight: bold;">Working Papers</n-h2>
+
+        <PaperCard
+            title="Misallocation and Product Choice"
+            authors="Sudhir Singh"
+            status=""
+            date="updated October 2023"
+            abstract="This paper explores the impact of misallocation on product choice in a heterogeneous firm model."
+            pdf="/misallocation_and_product_choice.pdf"
+        />
+
+
+        </n-flex>
+    </div>
 </template>
 
 <style scoped>
@@ -31,7 +50,7 @@ import { NImage, NGrid, NGridItem } from 'naive-ui'
 }
 
 .profile-image {
-    width: 40%;
+    width: 30%;
     height: auto;
     object-fit: cover;
 	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
@@ -40,11 +59,11 @@ import { NImage, NGrid, NGridItem } from 'naive-ui'
 }
 
 .profile-text {
-    width: 60%;
+    width: 70%;
 }
 
 /* Responsive design for narrow screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .profile-container {
         flex-direction: column;
         gap: 1rem;

@@ -105,6 +105,6 @@
 div {
   font-family: 'Rubik', sans-serif; /* for some reason setting it in themeOverrides does not work */
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
 }
 </style>

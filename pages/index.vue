@@ -3,6 +3,9 @@ import { NImage, NGrid, NGridItem } from 'naive-ui'
 </script>
 
 <template>
+    <div style="font-size: 40px; font-weight: bold; margin-bottom: 0.2em;">
+        Stepan Gordeev
+    </div>
     <div class="profile-container">
         <img
             src="/profile.jpg"

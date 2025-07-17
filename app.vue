@@ -59,12 +59,19 @@
       <n-flex justify="space-between" align-items="center">
 
         <span>
-        <n-gradient-text type="primary" size="24">
+        <!-- render a space always, as an easy way of ensuring that header doesn't change height on other pages -->
+        <n-gradient-text type="primary" size="28">
+            &nbsp;
+        </n-gradient-text>
+        <span v-show="route.name != 'index'">
+        <!-- only render the name in the header on pages other than main -->
+        <n-gradient-text type="primary" size="28">
             Stepan&nbsp;
         </n-gradient-text>
-        <n-gradient-text type="primary" size="24">
+        <n-gradient-text type="primary" size="28">
             Gordeev
         </n-gradient-text>
+        </span>
         </span>
 
         <!-- width of n-menu has to be hardcoded: by default, it wants 100% width and thus goes to new line. So set it high enough to fit everything and right-justify with justify-content -->
@@ -72,7 +79,7 @@
           v-model:value="route.name"
           :options="menuOptions"
           mode="horizontal"
-          style="width: 300px; justify-content: flex-end; color: black; font-weight: bold; font-size: 16px;"
+          style="width: 300px; justify-content: flex-end; color: black; font-weight: bold; font-size: 16px; align-items: center; display: flex;"
         />
         
 

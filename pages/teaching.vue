@@ -4,7 +4,7 @@ import CourseCard from '/course_card.vue'
 </script>
 
 <template>
-    <n-h2>Texas Christian University</n-h2>
+    <n-h2 style="color: #4d1979; font-weight: bold;"">Texas Christian University</n-h2>
     <n-flex vertical>
         <CourseCard
             name="Machine Learning and Big Data in Economics"
@@ -21,7 +21,7 @@ import CourseCard from '/course_card.vue'
     </n-flex>
     <n-divider />
     
-    <n-h2>University of Rochester</n-h2>
+    <n-h2 style="color: #283FAF; font-weight: bold;">University of Rochester</n-h2>
     <n-flex vertical>
         <CourseCard
             name="Computational Macroeconomics"

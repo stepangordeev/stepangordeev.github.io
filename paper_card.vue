@@ -1,6 +1,6 @@
 <script setup>
-import { computed } from 'vue'
-import { NButton, NCard, NText, NFlex } from 'naive-ui'
+import { computed, ref, Transition } from 'vue'
+import { NButton, NCard, NText, NFlex, NSpace } from 'naive-ui'
 
 const knownAuthors = [
   { name: 'Sudhir Singh', url: 'https://www.sudhirksingh.com/' },
@@ -8,6 +8,8 @@ const knownAuthors = [
   { name: 'Jeremy Jelliffe', url: 'http://www.jeremyjelliffe.com/'},
   { name: 'Dongin Kim', url: 'https://sites.google.com/view/dongin-kim/' }
 ];
+
+const showAbstract = ref(false);
 
 const props = defineProps({
   title: {
@@ -33,6 +35,26 @@ const props = defineProps({
   pdf: {
     type: String,
     required: true
+  },
+  slides: {
+    type: String,
+    required: false
+  },
+  working_name: {
+    type: String,
+    required: false
+  },
+  working_link: {
+    type: String,
+    required: false
+  },
+  policy_name: {
+    type: String,
+    required: false
+  },
+  policy_link: {
+    type: String,
+    required: false
   }
 })
 
@@ -73,14 +95,72 @@ const processedAuthors = computed(() => {
 
         </n-flex>
         <template #action>
-
-            <n-button secondary tag="a" :href="pdf">
-                <template #icon>
-                    <Icon name="fa6-solid:file-pdf" />
-                </template>
-                PDF
-            </n-button>
+            <n-space>
+              <n-button secondary @click="showAbstract = !showAbstract">
+                  <template #icon>
+                      <span class="arrow-icon" :class="{ 'rotated': showAbstract }">
+                          <Icon name="fa7-solid:chevron-right" />
+                      </span>
+                  </template>
+                  Abstract
+              </n-button>
+              <n-button secondary tag="a" :href="pdf">
+                  <template #icon>
+                      <Icon name="fa7-solid:file-pdf" />
+                  </template>
+                  PDF
+              </n-button>
+              <n-button v-if="slides" secondary tag="a" :href="slides">
+                  <template #icon>
+                      <Icon name="fa7-solid:layer-group" />
+                  </template>
+                  Slides
+              </n-button>
+              <n-button v-if="working_link" secondary tag="a" :href="working_link">
+                  <template #icon>
+                      <Icon name="fa7-solid:pen-nib" />
+                  </template>
+                  {{ working_name }}
+              </n-button>
+              <n-button v-if="policy_link" secondary tag="a" :href="policy_link">
+                  <template #icon>
+                      <Icon name="fa7-solid:landmark" />
+                  </template>
+                  {{ policy_name }}
+              </n-button>
+              <transition name="slide-fade">
+                <n-text v-if="showAbstract" style="margin-top: 16px;">
+                  {{ abstract }}
+                </n-text>
+              </transition>
+            </n-space>
         </template>
 
     </n-card>
+    
 </template>
+
+<style scoped>
+.arrow-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotated {
+  transform: rotate(90deg);
+}
+
+.slide-fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+</style>

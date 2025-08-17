@@ -35,6 +35,9 @@ import PaperCard from '/paper_card.vue'
             date="updated October 2023"
             abstract="This paper explores the impact of misallocation on product choice in a heterogeneous firm model."
             pdf="/misallocation_and_product_choice.pdf"
+            slides="/misallocation_and_product_choice_slides.pdf"
+            working_name="STEG WP"
+            working_link="https://steg.cepr.org/publications/misallocation-and-product-choice"
         />
 
 

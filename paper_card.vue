@@ -73,8 +73,8 @@ const processedAuthors = computed(() => {
 
 <template>
 
-    <n-card :title="title">
-        <n-flex vertical>
+    <n-card :title="title" content-style="padding-bottom: 12px" header-style="padding-bottom: 12px">
+        <n-flex vertical size="small">
 
             <n-text v-if="authors != ''">
                 with 
@@ -141,6 +141,10 @@ const processedAuthors = computed(() => {
 </template>
 
 <style scoped>
+:deep(.n-card__action) {
+  padding: 12px 20px !important;
+}
+
 .arrow-icon {
   display: inline-block;
   transition: transform 0.3s ease;

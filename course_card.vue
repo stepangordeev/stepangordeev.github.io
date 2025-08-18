@@ -39,7 +39,7 @@ const props = defineProps({
 
             <n-button secondary tag="a" :href="syllabus">
                 <template #icon>
-                    <Icon name="fa6-solid:file-pdf" />
+                    <Icon name="fa7-solid:file-pdf" />
                 </template>
                 Syllabus
             </n-button>

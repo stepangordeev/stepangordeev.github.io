@@ -12,3 +12,6 @@
         - `npm install`
     - run dev server:
         - `npm run dev`
+- favicon:
+    - twemoji:koala from https://icon-sets.iconify.design/
+        - download as png, save as public/favicon.png

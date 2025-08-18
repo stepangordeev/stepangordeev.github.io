@@ -7,5 +7,16 @@ export default defineNuxtConfig({
     defaults: {
       weights: [300, 400, 700],
     },
+  },
+  app: {
+    head: {
+      title: 'Stepan Gordeev', // default fallback title
+      htmlAttrs: {
+        lang: 'en',
+      },
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      ]
+    }
   }
 })

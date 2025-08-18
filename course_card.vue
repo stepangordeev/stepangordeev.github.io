@@ -24,7 +24,7 @@ const props = defineProps({
 
 <template>
 
-    <n-card :title="name">
+    <n-card :title="name" content-style="padding-bottom: 12px" header-style="padding-bottom: 12px">
         <template #header-extra>
             {{ number }}
         </template>
@@ -47,3 +47,9 @@ const props = defineProps({
 
     </n-card>
 </template>
+
+<style scoped>
+  :deep(.n-card__action) {
+    padding: 12px 20px !important;
+  }
+</style>

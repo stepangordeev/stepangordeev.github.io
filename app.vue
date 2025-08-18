@@ -97,7 +97,6 @@
 
     </n-layout-content>
 
-    <n-layout-footer>Footer</n-layout-footer>
   </n-layout>  
   </n-config-provider>
 </template>

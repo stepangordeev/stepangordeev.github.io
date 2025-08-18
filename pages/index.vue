@@ -20,6 +20,11 @@ import PaperCard from '/paper_card.vue'
             </p>
             <p>I strive to understand the role that the heterogeneous behavior of individual firms and households responding to their unique constraints plays in determining the aggregate development path of the economy.
             </p>
+            <p style="display: flex; align-items: center;">
+                <Icon name="fa7-solid:envelope" />
+                &nbsp;
+                <a class="email-link" href="mailto:s.gordeev@tcu.edu">s.gordeev@tcu.edu</a>
+            </p>
         </div>
     </div>
     <n-divider />
@@ -138,4 +143,14 @@ import PaperCard from '/paper_card.vue'
         width: 100%;
     }
 }
+
+a.email-link {
+  border-bottom: 1px dashed var(--n-text-color) !important;
+  color: var(--n-text-color) !important;
+  text-decoration: none;
+}
+a.email-link:hover {
+  border-bottom: 1px solid var(--n-text-color) !important;
+}
+
 </style>

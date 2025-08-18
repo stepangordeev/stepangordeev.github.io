@@ -9,6 +9,7 @@
     common: {
       primaryColor: '#f99a07',
       primaryColorHover: '#faae38', // slightly lighter
+      fontSize: '1rem'
     },
   }
 

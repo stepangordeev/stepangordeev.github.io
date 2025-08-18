@@ -6,7 +6,7 @@ const knownAuthors = [
   { name: 'Sudhir Singh', url: 'https://www.sudhirksingh.com/' },
   { name: 'Sandro Steinbach', url: 'https://www.sandrosteinbach.com/'},
   { name: 'Jeremy Jelliffe', url: 'http://www.jeremyjelliffe.com/'},
-  { name: 'Dongin Kim', url: 'https://sites.google.com/view/dongin-kim/' }
+  { name: 'Dongin Kim', url: 'https://www.donginkim.com/' }
 ];
 
 const showAbstract = ref(false);
@@ -16,11 +16,19 @@ const props = defineProps({
     type: String,
     required: true
   },
+  title_link: {
+    type: String,
+    required: true
+  },
   authors: {
     type: String,
     required: true
   },
   status: {
+    type: String,
+    required: false
+  },
+  journal: {
     type: String,
     required: false
   },
@@ -34,7 +42,7 @@ const props = defineProps({
   },
   pdf: {
     type: String,
-    required: true
+    required: false
   },
   slides: {
     type: String,
@@ -73,27 +81,29 @@ const processedAuthors = computed(() => {
 
 <template>
 
-    <n-card :title="title" content-style="padding-bottom: 12px" header-style="padding-bottom: 12px">
+    <n-card content-style="padding-bottom: 12px" header-style="padding-bottom: 12px">
+
         <n-flex vertical size="small">
 
             <n-text v-if="authors != ''">
                 with 
                 <span v-for="(author, index) in processedAuthors" :key="author.name">
-                    <a v-if="author.url" :href="author.url" target="_blank">{{ author.name }}</a>
+                    <a v-if="author.url" :href="author.url" target="_blank" class="author-link">{{ author.name }}</a>
                     <span v-else>{{ author.name }}</span>
                     <span v-if="index < processedAuthors.length - 1">, </span>
                 </span>
             </n-text>
 
             <n-text>
-                {{ status }}
-            </n-text>
-
-            <n-text>
-                {{ date }}
+                {{ status }} <span class="journal-name"> {{ journal }} </span>{{ date }}
             </n-text>
 
         </n-flex>
+
+        <template #header>
+          <a class="title-link" :href="title_link">{{ title }}</a>
+        </template>
+
         <template #action>
             <n-space>
               <n-button secondary @click="showAbstract = !showAbstract">
@@ -104,7 +114,7 @@ const processedAuthors = computed(() => {
                   </template>
                   Abstract
               </n-button>
-              <n-button secondary tag="a" :href="pdf">
+              <n-button v-if="pdf" secondary tag="a" :href="pdf">
                   <template #icon>
                       <Icon name="fa7-solid:file-pdf" />
                   </template>
@@ -145,6 +155,24 @@ const processedAuthors = computed(() => {
   padding: 12px 20px !important;
 }
 
+a.author-link {
+  border-bottom: 1px dashed var(--n-text-color) !important;
+  color: var(--n-text-color) !important;
+  text-decoration: none;
+}
+a.author-link:hover {
+  border-bottom: 1px solid var(--n-text-color) !important;
+}
+
+a.title-link {
+  border-bottom: 1px dashed var(--n-text-color) !important;
+  color: var(--n-text-color) !important;
+  text-decoration: none;
+}
+a.title-link:hover {
+  border-bottom: 1px solid var(--n-text-color) !important;
+}
+
 .arrow-icon {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -166,5 +194,10 @@ const processedAuthors = computed(() => {
 .slide-fade-leave-to {
   transform: translateY(-20px);
   opacity: 0;
+}
+
+span.journal-name {
+  /* font-style: italic; */
+  color: #f99a07;
 }
 </style>

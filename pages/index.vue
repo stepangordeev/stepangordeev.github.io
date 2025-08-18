@@ -29,18 +29,6 @@ import PaperCard from '/paper_card.vue'
         <n-h2 style="font-weight: bold;">Working Papers</n-h2>
 
         <PaperCard
-            title="Misallocation and Product Choice"
-            title_link="/misallocation_and_product_choice.pdf"
-            authors="Sudhir Singh"
-            status=""
-            date="updated October 2023"
-            abstract="We study the costs of misallocation of inputs between multi-product firms that endogenously choose among heterogeneous products. Misallocation of inputs between firms has been shown to be a significant drag on aggregate productivity: it is especially severe between farms in the agricultural sectors of low-income economies. Existing estimates of its costs have relied on models of single-product firms using a single aggregate production function. Using rich farm-crop-level data from India, we estimate product-level production functions and find that they are meaningfully different from one another and from the aggregate one. We build a general equilibrium model of firm-level misallocation in which multi-product firms (or farms) are able to choose the set and mix of heterogeneous products. Misinterpreting product heterogeneity as evidence of distortions and missing the endogenous product choice response to real distortions biases single-product models to overstate misallocation, while ignoring returns-to-scale heterogeneity and within-firm productivity dispersion biases them to understate it. On net, the single-product model understates the aggregate productivity cost of misallocation between Indian farms by 28%."
-            slides="/misallocation_and_product_choice_slides.pdf"
-            working_name="STEG WP"
-            working_link="https://steg.cepr.org/publications/misallocation-and-product-choice"
-        />
-
-        <PaperCard
             title="Nutrition Demand, Subsistence Farming, and Agricultural Productivity"
             title_link="/Nutrition Demand, Subsistence Farming, and Agricultural Productivity.pdf"
             authors=""
@@ -53,6 +41,29 @@ import PaperCard from '/paper_card.vue'
             working_link="https://steg.cepr.org/publications/nutrition-demand-subsistence-farming-and-agricultural-productivity"
             policy_name="STEG Policy Brief"
             policy_link="https://steg.cepr.org/publications/nutrition-demand-subsistence-farming-and-agricultural-productivity-0"
+        />
+
+        <PaperCard
+            title="Reaching the Novice or Nudging the Expert? Networks, Information, and the Experimental Returns to Migration"
+            title_link="/networks_information_migration.pdf"
+            authors="Zachary Barnett-Howell, Travis Baseler, Thomas Ginn"
+            status=""
+            date="updated August 2025"
+            abstract="Large differences between rural and urban incomes prevail in almost every low-income country, but it is unclear why these gaps persist and what policies can help migrants take advantage of them. Using novel data from over 50,000 Kenyan households, we find large information gaps: villagers underestimate earnings in the capital city by 30-60% on average. Disseminating information through household visits increases migration and improves economic outcomes, especially among households with no past migration history. Providing information together with new social network connections in the capital amplifies economic benefits. However, disseminating information to groups leads households with more migration experience to crowd out higher-return, inexperienced ones, and generates no measurable economic gains. We rationalize these findings using a general-equilibrium Roy model in which the marginal returns to migrating are higher among the inexperienced if and only if migrants are positively selected, as they are in our setting and many others. Model estimates imply that removing information frictions in Kenya would increase the migration rate from 17 to 22% and reduce the rural-urban income gap by 25%. These findings imply that in many settings, the value of migration interventions may depend on whether they can reach less-experienced, novice migrants."
+            registry_name="AEA RCT Registry"
+            registry_link="https://www.socialscienceregistry.org/trials/10051"
+        />
+
+        <PaperCard
+            title="Misallocation and Product Choice"
+            title_link="/misallocation_and_product_choice.pdf"
+            authors="Sudhir Singh"
+            status=""
+            date="updated October 2023"
+            abstract="We study the costs of misallocation of inputs between multi-product firms that endogenously choose among heterogeneous products. Misallocation of inputs between firms has been shown to be a significant drag on aggregate productivity: it is especially severe between farms in the agricultural sectors of low-income economies. Existing estimates of its costs have relied on models of single-product firms using a single aggregate production function. Using rich farm-crop-level data from India, we estimate product-level production functions and find that they are meaningfully different from one another and from the aggregate one. We build a general equilibrium model of firm-level misallocation in which multi-product firms (or farms) are able to choose the set and mix of heterogeneous products. Misinterpreting product heterogeneity as evidence of distortions and missing the endogenous product choice response to real distortions biases single-product models to overstate misallocation, while ignoring returns-to-scale heterogeneity and within-firm productivity dispersion biases them to understate it. On net, the single-product model understates the aggregate productivity cost of misallocation between Indian farms by 28%."
+            slides="/misallocation_and_product_choice_slides.pdf"
+            working_name="STEG WP"
+            working_link="https://steg.cepr.org/publications/misallocation-and-product-choice"
         />
 
         <PaperCard

@@ -6,7 +6,10 @@ const knownAuthors = [
   { name: 'Sudhir Singh', url: 'https://www.sudhirksingh.com/' },
   { name: 'Sandro Steinbach', url: 'https://www.sandrosteinbach.com/'},
   { name: 'Jeremy Jelliffe', url: 'http://www.jeremyjelliffe.com/'},
-  { name: 'Dongin Kim', url: 'https://www.donginkim.com/' }
+  { name: 'Dongin Kim', url: 'https://www.donginkim.com/' },
+  { name: 'Thomas Ginn', url: 'https://www.thomasginn.org/' },
+  { name: 'Zachary Barnett-Howell', url: 'https://zackbh.github.io/' },
+  { name: 'Travis Baseler', url: 'https://sites.google.com/view/travisbaseler/home' }
 ];
 
 const showAbstract = ref(false);
@@ -63,6 +66,14 @@ const props = defineProps({
   policy_link: {
     type: String,
     required: false
+  },
+  registry_name: {
+    type: String,
+    required: false
+  },
+  registry_link: {
+    type: String,
+    required: false
   }
 })
 
@@ -101,7 +112,7 @@ const processedAuthors = computed(() => {
         </n-flex>
 
         <template #header>
-          <a class="title-link" :href="title_link">{{ title }}</a>
+          <a class="title-link" :href="title_link">{{ title }}</a>           
         </template>
 
         <template #action>
@@ -138,6 +149,13 @@ const processedAuthors = computed(() => {
                   </template>
                   {{ policy_name }}
               </n-button>
+              <n-button v-if="registry_name" secondary tag="a" :href="registry_link">
+                  <template #icon>
+                      <Icon name="fa7-solid:stamp" />
+                  </template>
+                  {{ registry_name }}
+              </n-button>
+
               <transition name="slide-fade">
                 <n-text v-if="showAbstract" style="margin-top: 16px;">
                   {{ abstract }}

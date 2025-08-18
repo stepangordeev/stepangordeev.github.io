@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/fonts', '@nuxt/icon', 'nuxtjs-naive-ui'],
+  modules: ['@nuxt/fonts', '@nuxt/icon', '@bg-dev/nuxt-naiveui'],
   fonts: {
     defaults: {
       weights: [300, 400, 700],

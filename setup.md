@@ -3,8 +3,8 @@
     - Nuxt modules
         - icon (can auto-install during Nuxt setup)
         - fonts (can auto-install during Nuxt setup)
-        - naive-ui (to get Naive UI to work with Nuxt)
-            - https://www.naiveui.com/en-US/light/docs/nuxtjs
+        - @bg-dev/nuxt-naiveui
+            - unofficial naive ui module for nuxt: the official one is currently suffering from a bug when deploying statically
     - Naive UI
 - to set repo up for development on new PC
     - clone repo

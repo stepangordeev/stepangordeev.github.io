@@ -12,9 +12,13 @@ const props = defineProps({
   },
   syllabus: {
     type: String,
-    required: true
+    required: false
   },
-  terms: {
+  url: {
+    type: String,
+    required: false
+  },
+  desc: {
     type: String,
     required: true
   }
@@ -31,17 +35,24 @@ const props = defineProps({
         <n-flex vertical>
 
             <n-text italic>
-                {{ terms }}
+                {{ desc }}
             </n-text>
 
         </n-flex>
-        <template #action>
+        <template #action v-if="syllabus || url">
 
-            <n-button secondary tag="a" :href="syllabus">
+            <n-button v-if="syllabus" secondary tag="a" :href="syllabus">
                 <template #icon>
                     <Icon name="fa7-solid:file-pdf" />
                 </template>
                 Syllabus
+            </n-button>
+
+            <n-button v-if="url" secondary tag="a" :href="url">
+                <template #icon>
+                    <Icon name="fa7-solid:link" />
+                </template>
+                URL
             </n-button>
         </template>
 

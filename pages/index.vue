@@ -33,20 +33,6 @@ import PaperCard from '/paper_card.vue'
 
         <n-h2 style="font-weight: bold;">Working Papers</n-h2>
 
-        <PaperCard
-            title="Nutrition Demand, Subsistence Farming, and Agricultural Productivity"
-            title_link="/Nutrition Demand, Subsistence Farming, and Agricultural Productivity.pdf"
-            authors=""
-            status="revise and resubmit, "
-            journal="Journal of Development Economics"
-            date=""
-            abstract="In many of the poorest countries, agriculture is unproductive and subsistence farming is widespread. I propose nutrition demand as a mechanism that drives the production decisions of subsistence farmers and ultimately contributes to low aggregate agricultural productivity. I explore this mechanism in a model of farm-operating households facing explicit caloric needs and costly domestic trade, and test the model’s predictions on Malawian household-level data. In the model and in the data, the smallest farmers focus their consumption on obtaining calories and specialize their production in unsold staple crops; medium farmers diversify both their diet and their subsistence production; the largest farmers shift consumption to purchased goods by producing and selling marketable farm products. I quantify the aggregate implications of this farm-level product choice using the model. It suggests that lowering trade frictions enough for the average share of output sold by farmers to reach even 50% would make the country’s agricultural sector 42% more productive. Half of this increase is caused by the mechanically reduced erosion of output, and the other half by a better alignment of individual farmers’ product choice with their comparative advantage rather than their family’s nutritional needs or food preferences."
-            slides="/nutrition slides.pdf"
-            working_name="STEG WP"
-            working_link="https://steg.cepr.org/publications/nutrition-demand-subsistence-farming-and-agricultural-productivity"
-            policy_name="STEG Policy Brief"
-            policy_link="https://steg.cepr.org/publications/nutrition-demand-subsistence-farming-and-agricultural-productivity-0"
-        />
 
         <PaperCard
             title="Reaching the Novice or Nudging the Expert? Networks, Information, and the Experimental Returns to Migration"
@@ -82,15 +68,19 @@ import PaperCard from '/paper_card.vue'
         <n-h2 style="font-weight: bold;">Publications</n-h2>
 
         <PaperCard
-            title="Determinants of PTA Design: Insights from Machine Learning"
-            title_link="https://doi.org/10.1016/j.inteco.2024.100504"
-            authors="Sandro Steinbach"
+            title="Nutrition Demand, Subsistence Farming, and Agricultural Productivity"
+            title_link="https://doi.org/10.1016/j.jdeveco.2025.103681"
+            authors=""
             status=""
-            journal="International Economics"
-            date=", 2024"
-            abstract="Preferential Trade Agreements (PTAs) have emerged as the dominant form of international trade governance. Provisions included in PTAs are increasingly numerous, broad in their purview, deep in their scope, and varied between agreements. We study the economic, political, and geographic determinants of PTA design differences. For each of the hundreds of classified PTA provisions, we consider hundreds of country-pair characteristics as potential determinants, covering many individual mechanisms the literature has studied. To deal with this high-dimensionality and complexity, we employ Random Forests, a supervised machine learning technique. We use a robust variable importance measure to identify the most important determinants of the inclusion of each PTA provision. Contagion due to competition for export markets, geographic proximity, and governance quality emerge as the most important determinants of PTA design."
-            pdf="/determinants_of_PTA_design.pdf"
-            slides="/determinants_of_PTA_design_slides.pdf"
+            journal="Journal of Development Economics"
+            date=", 2026"
+            abstract="In many of the poorest countries, agriculture is unproductive and subsistence farming is widespread. I propose nutrition demand as a mechanism that drives the production decisions of subsistence farmers and ultimately contributes to low aggregate agricultural productivity. I explore this mechanism in a model of farm-operating households facing explicit caloric needs and costly domestic trade, and test the model’s predictions on Malawian household-level data. In the model and in the data, the smallest farmers focus their consumption on obtaining calories and specialize their production in unsold staple crops; medium farmers diversify both their diet and their subsistence production; the largest farmers shift consumption to purchased goods by producing and selling marketable farm products. I quantify the aggregate implications of this farm-level product choice using the model. It suggests that lowering trade frictions enough for the average share of output sold by farmers to reach even 50% would make the country’s agricultural sector 42% more productive. Half of this increase is caused by the mechanically reduced erosion of output, and the other half by a better alignment of individual farmers’ product choice with their comparative advantage rather than their family’s nutritional needs or food preferences."
+            pdf="/Nutrition Demand, Subsistence Farming, and Agricultural Productivity.pdf"
+            slides="/nutrition slides.pdf"
+            working_name="STEG WP"
+            working_link="https://steg.cepr.org/publications/nutrition-demand-subsistence-farming-and-agricultural-productivity"
+            policy_name="STEG Policy Brief"
+            policy_link="https://steg.cepr.org/publications/nutrition-demand-subsistence-farming-and-agricultural-productivity-0"
         />
 
         <PaperCard
@@ -103,7 +93,19 @@ import PaperCard from '/paper_card.vue'
             abstract="This paper employs machine learning to determine which preferential trade agreement (PTA) provisions are relevant to agricultural trade patterns and the factors that may influence their adoption. Utilizing the three-way gravity model, we apply plug-in Lasso regularized regression to pinpoint predictive PTA provisions for agricultural trade. Our findings underscore the importance of competition policies, export taxes, intellectual property rights, capital movement, state enterprises, and technical trade barriers. Subsequently, we use Random Forests to reveal the economic, political, social, and geographic factors associated with the inclusion of those provisions in PTAs. The findings highlight the roles of contagion, governance quality, energy use, and geographic proximity. Our analysis provides new insights that can aid in formulating strategies to support agricultural trade."
             pdf="/what_matters_for_agricultural_trade.pdf"
         />
-        
+
+        <PaperCard
+            title="Determinants of PTA Design: Insights from Machine Learning"
+            title_link="https://doi.org/10.1016/j.inteco.2024.100504"
+            authors="Sandro Steinbach"
+            status=""
+            journal="International Economics"
+            date=", 2024"
+            abstract="Preferential Trade Agreements (PTAs) have emerged as the dominant form of international trade governance. Provisions included in PTAs are increasingly numerous, broad in their purview, deep in their scope, and varied between agreements. We study the economic, political, and geographic determinants of PTA design differences. For each of the hundreds of classified PTA provisions, we consider hundreds of country-pair characteristics as potential determinants, covering many individual mechanisms the literature has studied. To deal with this high-dimensionality and complexity, we employ Random Forests, a supervised machine learning technique. We use a robust variable importance measure to identify the most important determinants of the inclusion of each PTA provision. Contagion due to competition for export markets, geographic proximity, and governance quality emerge as the most important determinants of PTA design."
+            pdf="/determinants_of_PTA_design.pdf"
+            slides="/determinants_of_PTA_design_slides.pdf"
+        />
+
         </n-flex>
     </div>
 </template>

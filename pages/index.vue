@@ -35,11 +35,21 @@ import PaperCard from '/paper_card.vue'
 
 
         <PaperCard
+            title="Macroeconomic Effects of Lifting Barriers to Migration"
+            title_link="/macroeconomic_effects_of_lifting_barriers_to_migration.pdf"
+            authors="Travis Baseler"
+            status="R&amp;R at the"
+            journal="Journal of Monetary Economics"
+            date=", updated August 2026"
+            abstract="Many economic studies have identified barriers to migration which can distort labor allocation and productivity, but comparing the macroeconomic importance of each barrier is complicated by variation in study design and sampling. We build and estimate a dynamic general-equilibrium model of rural–urban migration which nests several of the key frictions emphasized in the literature. We discipline the model using large-scale data from Kenya—the site of several recent migration experiments—and reproduce each experiment within the model. We proceed to estimate the long-run treatment effects of each intervention, the macroeconomic effects of scaling each intervention to the national level, and the aggregate importance of each migration friction."
+        />
+
+        <PaperCard
             title="Reaching the Novice or Nudging the Expert? Networks, Information, and the Experimental Returns to Migration"
-            title_link="/networks_information_migration.pdf"
+            title_link="/reaching_the_novice_or_nudging_the_expert.pdf"
             authors="Zachary Barnett-Howell, Travis Baseler, Thomas Ginn"
-            status=""
-            date="updated August 2025"
+            status="under review, "
+            date="updated May 2026"
             abstract="Large differences between rural and urban incomes prevail in almost every low-income country, but it is unclear why these gaps persist and what policies can help migrants take advantage of them. We first document widespread information gaps: in a representative sample across five Kenyan counties, villagers underestimate earnings in the capital city by 30-60% on average. In a randomized trial with 17,000 households, we find that disseminating information through household visits increases migration and improves economic outcomes, especially among households with no past migration history. Providing information together with new social network connections in the capital amplifies economic benefits. However, disseminating information to groups leads households with more migration experience to crowd out higher-return, inexperienced ones, increasing migration but generating no measurable economic gains. We build and estimate a general-equilibrium Roy model that rationalizes our results and predicts settings where they generalize. In the model, the marginal returns to migrating are higher among the inexperienced if and only if migrants are positively selected, as they are in our setting and many others. Model estimates imply that removing information frictions in Kenya would increase the migration rate from 17 to 22% and reduce the rural-urban income gap by 25%. In many settings, the value of migration interventions may depend on whether they can reach less-experienced, novice migrants."
             registry_name="AEA RCT Registry"
             registry_link="https://www.socialscienceregistry.org/trials/10051"

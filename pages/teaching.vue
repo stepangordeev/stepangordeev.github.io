@@ -18,15 +18,15 @@ import CourseCard from '/course_card.vue'
     <n-flex vertical>
         <CourseCard
             name="Machine Learning and Big Data in Economics"
-            number="ECON 40970"
+            number="ECON 40333"
             syllabus="/syllabus_big_data.pdf"
-            desc="Spring 2025"
+            desc="2025–2026"
         />
         <CourseCard
             name="Intermediate Macroeconomics"
             number="ECON 30233"
             syllabus="/syllabus_macro.pdf"
-            desc="Spring 2025, Fall 2024"
+            desc="2024–2026"
         />
     </n-flex>
     <n-divider />
@@ -37,13 +37,13 @@ import CourseCard from '/course_card.vue'
             name="Computational Macroeconomics"
             number=""
             syllabus="/syllabus_computational.pdf"
-            desc="Fall 2020, Fall 2019"
+            desc="2019–2020"
         />
         <CourseCard
             name="Intermediate Macroeconomics"
             number="ECO 209"
             syllabus="/syllabus_209.pdf"
-            desc="Summer 2020"
+            desc="2020"
         />
     </n-flex>
 </template>

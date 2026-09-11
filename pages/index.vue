@@ -65,7 +65,6 @@ import PaperCard from '/paper_card.vue'
             date="updated September 2026"
             abstract="We study the costs of misallocation of inputs between multi-product firms that endogenously choose among heterogeneous products. Misallocation of inputs between firms has been shown to be a significant drag on aggregate productivity: it is especially severe between farms in the agricultural sectors of low-income economies. Existing estimates of its costs have relied on models of single-product firms using a single aggregate production function. Using rich farm-crop-level data from India, we estimate product-level production functions and find that they are meaningfully different from one another and from the aggregate one. We build a general equilibrium model of firm-level misallocation in which multi-product firms (or farms) are able to choose the set and mix of heterogeneous products. Equalizing cross-farm input-market frictions raises aggregate productivity by 137% in the multi-product model and 167% in a conventional single-product model: the single-product model overstates the aggregate productivity cost of misallocation between Indian farms by 22%.
 "
-            slides="/misallocation_and_product_choice_slides.pdf"
             working_name="STEG WP"
             working_link="https://steg.cepr.org/publications/misallocation-and-product-choice"
         />

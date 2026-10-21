@@ -1,5 +1,5 @@
 <script setup>
-import { NButton, NCard, NText, NFlex, NH2, NDivider } from 'naive-ui'
+import { NButton, NCard, NText, NFlex, NH2 } from 'naive-ui'
 import CourseCard from '/course_card.vue'
 </script>
 
@@ -11,11 +11,9 @@ import CourseCard from '/course_card.vue'
             url="https://sgordeev.com/growth-model-simulator/"
             desc="An interactive dashboard that simulates various models of economic growth that are commonly found in undergraduate macro and growth courses"
         />
-    </n-flex>
-    <n-divider />
 
-    <n-h2 style="color: #4d1979; font-weight: bold;">Texas Christian University</n-h2>
-    <n-flex vertical>
+        <n-h2 style="color: #4d1979; font-weight: bold; margin-top: 16px; margin-bottom: 8px;">Texas Christian University</n-h2>
+
         <CourseCard
             name="Machine Learning and Big Data in Economics"
             number="ECON 40333"
@@ -28,11 +26,9 @@ import CourseCard from '/course_card.vue'
             syllabus="/syllabus_macro.pdf"
             desc="2024–2026"
         />
-    </n-flex>
-    <n-divider />
-    
-    <n-h2 style="color: #283FAF; font-weight: bold;">University of Rochester</n-h2>
-    <n-flex vertical>
+
+        <n-h2 style="color: #283FAF; font-weight: bold; margin-top: 16px; margin-bottom: 8px;">University of Rochester</n-h2>
+
         <CourseCard
             name="Computational Macroeconomics"
             number=""

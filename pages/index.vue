@@ -1,5 +1,5 @@
 <script setup>
-import { NImage, NGrid, NGridItem, NH2, NDivider, NFlex, NCard } from 'naive-ui'
+import { NImage, NGrid, NGridItem, NH2, NFlex, NCard } from 'naive-ui'
 import PaperCard from '/paper_card.vue'
 </script>
 
@@ -27,11 +27,10 @@ import PaperCard from '/paper_card.vue'
             </p>
         </div>
     </div>
-    <n-divider />
     <div>
         <n-flex vertical>
 
-        <n-h2 style="font-weight: bold;">Working Papers</n-h2>
+        <n-h2 style="font-weight: bold; margin-bottom: 8px;">Working Papers</n-h2>
 
 
         <PaperCard
@@ -45,7 +44,7 @@ import PaperCard from '/paper_card.vue'
         />
 
         <PaperCard
-            title="Reaching the Novice or Nudging the Expert? Networks, Information, and the Experimental Returns to Migration"
+            title="Reaching the Novice or Nudging the Expert? Information Delivery and the Returns to Migration"
             title_link="/reaching_the_novice_or_nudging_the_expert.pdf"
             authors="Zachary Barnett-Howell, Travis Baseler, Thomas Ginn"
             status="under review, "
@@ -77,7 +76,7 @@ import PaperCard from '/paper_card.vue'
             abstract="We study whether heterogeneity in the intrinsic features of production inputs may generate heterogeneity in production technologies optimally chosen by firms, leading existing estimates of misallocation to overstate its costs. Existing estimates of the severity of the misallocation of inputs across firms rely on assuming homogeneous production technology and interpreting deviations from that technology as evidence of misallocative distortions. We use a state-of-the-art clustering algorithm for ordinal data to group Indian agricultural plots into land types by the intrinsic physical features of each plot. We find that production functions are significantly heterogeneous across land types, which we confirm with placebo-like randomization inference. Some types of land are better suited to land-intensive technology, others to labor-intensive technology, etc. We build a model in which heterogeneous farmers face distortions and choose the type of land to rent. We use the model to quantify the cost of misallocation for India’s aggregate agricultural productivity and compare it to conventional models that assume homogeneous production technology."
         />
 
-        <n-h2 style="font-weight: bold;">Publications</n-h2>
+        <n-h2 style="font-weight: bold; margin-top: 16px; margin-bottom: 8px;">Publications</n-h2>
 
         <PaperCard
             title="Nutrition Demand, Subsistence Farming, and Agricultural Productivity"
@@ -127,6 +126,7 @@ import PaperCard from '/paper_card.vue'
     display: flex;
     gap: 2rem;
     align-items: flex-start;
+    margin-bottom: 2rem;
 }
 
 .profile-image {

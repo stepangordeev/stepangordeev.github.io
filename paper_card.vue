@@ -92,7 +92,7 @@ const processedAuthors = computed(() => {
 
 <template>
 
-    <n-card content-style="padding-bottom: 12px" header-style="padding-bottom: 12px">
+    <n-card :bordered="false" :theme-overrides="{ paddingMedium: '0 12px' }" header-style="padding-bottom: 6px">
 
         <n-flex vertical size="small">
 
@@ -117,39 +117,39 @@ const processedAuthors = computed(() => {
 
         <template #action>
             <n-space>
-              <n-button secondary @click="showAbstract = !showAbstract">
+              <n-button size="small" secondary @click="showAbstract = !showAbstract">
                   <template #icon>
                       <span class="arrow-icon" :class="{ 'rotated': showAbstract }">
-                          <Icon name="fa7-solid:chevron-right" />
+                          <Icon name="fa7-solid:chevron-right" mode="svg" />
                       </span>
                   </template>
                   Abstract
               </n-button>
-              <n-button v-if="pdf" secondary tag="a" :href="pdf">
+              <n-button size="small" v-if="pdf" secondary tag="a" :href="pdf">
                   <template #icon>
                       <Icon name="fa7-solid:file-pdf" />
                   </template>
                   PDF
               </n-button>
-              <n-button v-if="slides" secondary tag="a" :href="slides">
+              <n-button size="small" v-if="slides" secondary tag="a" :href="slides">
                   <template #icon>
                       <Icon name="fa7-solid:layer-group" />
                   </template>
                   Slides
               </n-button>
-              <n-button v-if="working_link" secondary tag="a" :href="working_link">
+              <n-button size="small" v-if="working_link" secondary tag="a" :href="working_link">
                   <template #icon>
                       <Icon name="fa7-solid:pen-nib" />
                   </template>
                   {{ working_name }}
               </n-button>
-              <n-button v-if="policy_link" secondary tag="a" :href="policy_link">
+              <n-button size="small" v-if="policy_link" secondary tag="a" :href="policy_link">
                   <template #icon>
                       <Icon name="fa7-solid:landmark" />
                   </template>
                   {{ policy_name }}
               </n-button>
-              <n-button v-if="registry_name" secondary tag="a" :href="registry_link">
+              <n-button size="small" v-if="registry_name" secondary tag="a" :href="registry_link">
                   <template #icon>
                       <Icon name="fa7-solid:stamp" />
                   </template>
@@ -169,8 +169,18 @@ const processedAuthors = computed(() => {
 </template>
 
 <style scoped>
+.n-card {
+  /* spacing sits outside the card, so the left border spans just the text */
+  margin: 14px 0 10px;
+  border-left: 1px solid var(--n-border-color);
+  border-radius: 0; /* rounded corners would curl the ends of the lone left border */
+}
 :deep(.n-card__action) {
-  padding: 12px 20px !important;
+  padding-top: 4px !important;
+  background-color: transparent !important;
+}
+:deep(.n-card__action .n-button) {
+  vertical-align: top; /* small buttons on the default baseline leave a gap below */
 }
 
 a.author-link {
@@ -192,7 +202,7 @@ a.title-link:hover {
 }
 
 .arrow-icon {
-  display: inline-block;
+  display: flex; /* square box, so the rotation pivots on the icon's centre */
   transition: transform 0.3s ease;
 }
 
@@ -217,5 +227,6 @@ a.title-link:hover {
 span.journal-name {
   /* font-style: italic; */
   color: #f99a07;
+  font-weight: 500;
 }
 </style>

@@ -12,7 +12,7 @@ import CourseCard from '/course_card.vue'
             desc="An interactive dashboard that simulates various models of economic growth that are commonly found in undergraduate macro and growth courses"
         />
 
-        <n-h2 style="color: #4d1979; font-weight: bold; margin-top: 16px; margin-bottom: 8px;">Texas Christian University</n-h2>
+        <n-h2 style="color: #4d1979; font-weight: bold; margin-top: 12px; margin-bottom: 4px;">Texas Christian University</n-h2>
 
         <CourseCard
             name="Machine Learning and Big Data in Economics"
@@ -27,7 +27,7 @@ import CourseCard from '/course_card.vue'
             desc="2024–2026"
         />
 
-        <n-h2 style="color: #283FAF; font-weight: bold; margin-top: 16px; margin-bottom: 8px;">University of Rochester</n-h2>
+        <n-h2 style="color: #283FAF; font-weight: bold; margin-top: 12px; margin-bottom: 4px;">University of Rochester</n-h2>
 
         <CourseCard
             name="Computational Macroeconomics"

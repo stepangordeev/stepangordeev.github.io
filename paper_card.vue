@@ -171,7 +171,7 @@ const processedAuthors = computed(() => {
 <style scoped>
 .n-card {
   /* spacing sits outside the card, so the left border spans just the text */
-  margin: 14px 0 10px;
+  margin: 8px 0 10px;
   border-left: 1px solid var(--n-border-color);
   border-radius: 0; /* rounded corners would curl the ends of the lone left border */
 }

@@ -16,9 +16,9 @@ import PaperCard from '/paper_card.vue'
             <p style="margin-top: 0;"> I am an Assistant Professor of Economics at Texas Christian University. I completed my Ph.D. in Economics at the University of Rochester in 2022 and served as a Postdoctoral Research Associate at the University of Connecticut in 2022–2024.
             </p>
             <p>
-            My research is at the intersection of macroeconomics and development.
+            I am a macroeconomist working on economic development.
             </p>
-            <p>I strive to understand the role that the heterogeneous behavior of individual firms and households responding to their unique constraints plays in determining the aggregate development path of the economy.
+            <p>I study how the heterogeneous behavior of individual households, firms, and farms responding to their unique constraints in the presence of frictions shapes aggregate growth. My approach combines quantitative heterogeneous-agent models with experimental and observational micro data.
             </p>
             <p style="display: flex; align-items: center;">
                 <Icon name="fa7-solid:envelope" />

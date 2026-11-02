@@ -37,9 +37,9 @@ import PaperCard from '/paper_card.vue'
             title="Macroeconomic Effects of Lifting Barriers to Migration"
             title_link="/macroeconomic_effects_of_lifting_barriers_to_migration.pdf"
             authors="Travis Baseler"
-            status="R&amp;R at the"
+            status="Conditionally Accepted at the"
             journal="Journal of Monetary Economics"
-            date=", updated September 2026"
+            date=", updated October 2026"
             abstract="Many economic studies have identified barriers to migration which can distort labor allocation and productivity, but comparing the macroeconomic importance of each barrier is complicated by variation in study design and sampling. We build and estimate a dynamic general-equilibrium model of rural--urban migration which nests several of the key frictions emphasized in the literature. We discipline the model using large-scale data from Kenya---the site of several recent migration experiments---and reproduce each experiment within the model. We proceed to estimate the long-run treatment effects of each intervention, the macroeconomic effects of scaling interventions to the national level, and the aggregate importance of each migration friction. Our findings shed light on the lack of a migration response to large unconditional cash transfers, and reveal how treatment impacts on migration can rise over time as the constraints relaxed by an intervention interact with subsequent productivity shocks."
         />
 
